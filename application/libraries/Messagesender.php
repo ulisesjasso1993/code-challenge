@@ -4,7 +4,7 @@ class Messagesender
 {
 	public function sendUpdateStatus($book)
 	{
-		$text = "El libro {$book['book_name']} se encuentra disponible!!";
+		$text = "El libro {$book['book_name']} ya se encuentra disponible!!";
 		$url =
 			"https://graph.facebook.com/LATEST-API-VERSION/PAGE-ID/messages?recipient={'id':'PSID'}&messaging_type=RESPONSE&message={'text':'{$text}'}&access_token="
 			. ACCESS_TOKEN_MESS;
